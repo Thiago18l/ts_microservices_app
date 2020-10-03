@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start:dist": "tsc -w",
-    "start:run": "nodemon ./dist/src/index.js",
+    "start:run": "nodemon ./dist/index.js",
     "start": "concurrently npm:start:*"    
   },
   "dependencies": {
