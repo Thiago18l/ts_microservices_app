@@ -1,13 +1,15 @@
-import React from 'react';
+ import React from 'react';
+ import Post from './components/PostCreate';
+ import List from './components/PostList';
 
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
-
-export default App;
+ export default () => {
+     return (
+        <div className="container">
+            <h1>Create Post</h1>
+            <Post />
+            <hr/>
+            <h1>Posts</h1>
+            <List />
+        </div>
+        );
+ };
