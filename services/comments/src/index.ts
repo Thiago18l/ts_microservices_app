@@ -5,7 +5,7 @@ import cors from 'cors';
 
 const app = express();
 
-const PORT = process.env.PORT || 8070;
+const PORT = process.env.PORT || 4001;
 
 app.use(bodyParser.json());
 app.use(cors());
