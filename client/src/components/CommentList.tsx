@@ -17,7 +17,7 @@ export default ({ id }: IPost): JSX.Element => {
     
     useEffect(() => {
         const fetchData = async () => {
-            const result = await axios.get(`http://localhost:8070/posts/${id}/comments`);
+            const result = await axios.get(`http://localhost:4001/posts/${id}/comments`);
             setComments(result.data);
         }
         fetchData();

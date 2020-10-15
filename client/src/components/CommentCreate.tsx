@@ -10,7 +10,7 @@ export default ({ id }: IPost) => {
     
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        await axios.post(`http://localhost:8070/posts/${id}/comments`, {
+        await axios.post(`http://localhost:4001/posts/${id}/comments`, {
             content
         });
         setContent('');
